@@ -9,12 +9,12 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "removeComments": true,
-    "resolveJsonModule": true,
     "typeRoots": [
       "./node_modules/@types",
       "./src/@types"
     ],
     "esModuleInterop": true,
+    "resolveJsonModule": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
@@ -34,5 +34,8 @@
         "./src/config/*"
       ]
     }
-  }
+  },
+  "include": [
+    "src/**/*"
+  ]
 }

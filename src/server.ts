@@ -1,10 +1,8 @@
 import express from 'express';
-import { UsersController } from "@controllers/UsersController";
+import { UsersController } from '@controllers/UsersController';
 
-const app = express()
+const app = express();
 
-app.get('/', (request, response) => {
-  return response.json({ message: 'Hello world' })
-})
+app.get('/', (request, response) => response.json({ message: 'Hello world' }));
 
 app.listen(3333);
