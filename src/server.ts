@@ -1,8 +1,5 @@
-import express from 'express';
-import { UsersController } from '@controllers/UsersController';
+import App from './app'
+import routes from './routes'
 
-const app = express();
-
-app.get('/', (request, response) => response.json({ message: 'Hello world' }));
-
-app.listen(3333);
+App.use(routes)
+App.listen(3000)
